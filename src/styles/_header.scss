@@ -1,0 +1,40 @@
+.header{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+
+    & > .background{
+      position: absolute;
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+
+      & > .left{
+        width: 40%;
+        height: 238px;
+        background: url('assets/header-left.png');
+      }
+      & > .center{
+        width: 1331px;
+        height: 250px;
+        background-size: 1331px 150px;
+        z-index: 99;
+      }
+      & > .right{
+        width: 40%;
+        height: 223px;
+        margin-top: 27px;
+        background: url('assets/header-right.png');
+      }
+    }
+
+    & > .name{
+      position: absolute;
+      width:518px;
+      margin-top: -40px;
+      z-index: 99;
+    }
+}
