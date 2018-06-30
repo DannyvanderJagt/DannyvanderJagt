@@ -17,7 +17,9 @@ section{
   }
 }
 
-
+@media (max-width: 700px){
+  .left{ display: none !important; }
+}
 
 #experience{
   width: 100%;
@@ -32,6 +34,7 @@ section{
   max-width: 1300px;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid $line;
 
   & > .left {
     display: flex;
@@ -69,6 +72,19 @@ section{
         background: white;
         margin-left: -14px;
         margin-right: -20px;
+      }
+    }
+  }
+
+  @media (max-width: 1300px){
+    .angle{
+      // background-color: red !important;
+
+      &.odd.right{
+        display: none;
+      }
+      &.even.left{
+        display: none;
       }
     }
   }
@@ -114,4 +130,19 @@ section{
     text-align: left;
     margin-top: 20px;
   }
+}
+
+#experience{
+  border-bottom: 1px solid $line;
+}
+#lets-talk{
+  width: 100%;
+  padding-top: 80px;
+  border-bottom: 1px solid $line;
+}
+#footer{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

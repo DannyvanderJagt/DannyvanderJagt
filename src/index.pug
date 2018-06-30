@@ -1,8 +1,8 @@
 head
   link(href='main.css' type='text/css' rel='stylesheet')
+  meta(name="viewport" content="width=device-width, initial-scale=1")
 body
   include components/navigation.pug
-
 
   .header
     .background
@@ -21,10 +21,9 @@ body
     .info Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
     .spacer
     .socials.big
-      img.icon(src='assets/logo-500px.svg')
-      img.icon(src='assets/logo-medium.svg')
-      img.icon(src='assets/logo-github.svg')
-      img.icon(src='assets/logo-linkedin.svg')
+      each item in socials
+        a.icon(href=item.url)
+          img.icon(src=item.icon)
     .spacer
     .button Download CV
     .spacer.h-80
@@ -32,4 +31,5 @@ body
   section#experience
     include components/projects.pug
 
-    
+  include components/talk.pug
+  include components/footer.pug

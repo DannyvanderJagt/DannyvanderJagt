@@ -5,15 +5,15 @@ section#experience
   .spacer.h-10
   h3.subtitle #{experience.quote}
   .spacer.h-80
-  .line
+
 
 each project, index in experience.items
   .project.creative-confidence
     if index % 2
       .left
-        .angle.left
+        .angle.even.left
         .left-image(style="background-image: url("+ project.featureImage+")")
-        .angle.right
+        .angle.even.right
 
     .right
       .job #{project.jobDescription}
