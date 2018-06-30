@@ -1,23 +1,35 @@
 head
   link(href='main.css' type='text/css' rel='stylesheet')
 body
-  nav.navigation
-    img.icon(src='assets/icon.svg')
-    .menu
-      .item Who I am
-      .item Experience
-      .item Let's talk
-    .socials
+  include components/navigation.pug
+
+
+  .header
+    .background
+      .left
+      img.center(src='assets/header.png')
+      .right
+    img.name(src='assets/header-name.png')
+
+
+  section#who-i-am
+    .spacer-h-40
+    img.photo(src='assets/photo-me.png')
+    h1 Who I am.
+    h3.subtitle “An combination of determination, creativity and curiosity”
+    .spacer.h-40
+    .info Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+    .spacer
+    .socials.big
       img.icon(src='assets/logo-500px.svg')
       img.icon(src='assets/logo-medium.svg')
       img.icon(src='assets/logo-github.svg')
       img.icon(src='assets/logo-linkedin.svg')
-  .navigation-spacer
+    .spacer
+    .button Download CV
+    .spacer.h-80
 
-  .main-content
-    .header
-      .background
-        .left
-        img.center(src='assets/header.png')
-        .right
-      img.name(src='assets/header-name.png')
+  section#experience
+    include components/projects.pug
+
+    

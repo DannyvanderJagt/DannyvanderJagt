@@ -1,0 +1,32 @@
+section#experience
+  .line
+  .spacer.h-80
+  h1.big Experience
+  .spacer.h-10
+  h3.subtitle #{experience.quote}
+  .spacer.h-80
+  .line
+
+each project, index in experience.items
+  .project.creative-confidence
+    if index % 2
+      .left
+        .angle.left
+        .left-image(style="background-image: url("+ project.featureImage+")")
+        .angle.right
+
+    .right
+      .job #{project.jobDescription}
+      each title in project.title
+        .title #{title}
+      .subtitle #{project.quote}
+      .info  #{project.content}
+      .spacer.h-40
+      each button in project.buttons
+        .button #{button.title}
+
+    if !(index % 2)
+      .left
+        .angle.left.odd
+        .left-image(style="background-image: url("+ project.featureImage+")")
+        .angle.right.odd

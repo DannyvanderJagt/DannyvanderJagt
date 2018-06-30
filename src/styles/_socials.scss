@@ -1,0 +1,27 @@
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > .icon {
+    height: 20px;
+    margin-left: 15px;
+  }
+
+  &.big > .icon {
+    height: 40px;
+    margin-left: 25px;
+  }
+}
+
+.button{
+  height: 32px;
+  background: black;
+  border-radius: 50px;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

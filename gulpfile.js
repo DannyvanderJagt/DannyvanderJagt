@@ -4,8 +4,11 @@ const pug = require('gulp-pug')
 const plumber = require('gulp-plumber')
 const liveReload = require('gulp-server-livereload')
 
+const data = require('./src/data.js')
+
 const paths = {
   src: {
+    data: './src/data.js',
     styles: './src/styles/*.scss',
     html: `./src/**/*.pug`,
   },
@@ -27,7 +30,9 @@ gulp.task('html', () =>
   gulp
     .src(paths.src.html)
     .pipe(plumber())
-    .pipe(pug())
+    .pipe(pug({
+      data,
+    }))
     .pipe(gulp.dest(paths.public.default))
 )
 
@@ -41,15 +46,15 @@ gulp.task('livereload', function() {
   gulp.src(paths.public.default)
     .pipe(liveReload({
       livereload: true,
-      // directoryListing: true,
       open: true
     }))
 })
 
 
+gulp.task('data:watch', () => gulp.watch(paths.src.data, ['html']))
 gulp.task('styles:watch', () => gulp.watch(paths.src.styles, ['styles']))
 gulp.task('html:watch', () => gulp.watch(paths.src.html, ['html']))
 gulp.task('assets:watch', () => gulp.watch(paths.assets, ['assets']))
 
 gulp.task('default', ['html', 'styles', 'assets', 'watch', 'livereload'])
-gulp.task('watch', ['html:watch', 'styles:watch', 'assets:watch'])
+gulp.task('watch', ['html:watch', 'styles:watch', 'assets:watch', 'data:watch'])

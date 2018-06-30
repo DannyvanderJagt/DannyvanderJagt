@@ -35,6 +35,117 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .socials > .icon {
+    height: 20px;
+    margin-left: 15px; }
+  .socials.big > .icon {
+    height: 40px;
+    margin-left: 25px; }
+
+.button {
+  height: 32px;
+  background: black;
+  border-radius: 50px;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #F4F4F4; }
+
+#who-i-am > .photo {
+  width: 150px;
+  margin-bottom: -20px; }
+
+#experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.project {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  max-width: 1300px;
+  display: flex;
+  overflow: hidden; }
+  .project > .left {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 650px;
+    background-size: auto 100%;
+    background-position: center center;
+    overflow: hidden; }
+    .project > .left > .left-image {
+      height: 100%;
+      width: 100%;
+      background-size: auto 100%;
+      background-position: center center; }
+    .project > .left > .angle {
+      width: 50px;
+      height: 810px;
+      transform: rotate(2deg); }
+      .project > .left > .angle.odd {
+        transform: rotate(-2deg); }
+      .project > .left > .angle.left {
+        position: absolute;
+        background: white;
+        margin-left: -36px; }
+      .project > .left > .angle.right {
+        width: 30px;
+        background: white;
+        margin-left: -14px;
+        margin-right: -20px; }
+  .project > .right {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-width: 450px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .project .job {
+    font-size: 19px;
+    font-weight: bold;
+    background: #D6F8F1;
+    padding: 5px 10px;
+    margin: 60px 0px 20px 0px; }
+  .project .title {
+    font-size: 64px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    max-width: 500px;
+    height: 54px;
+    font-weight: bold;
+    padding: 0px 10px; }
+  .project .subtitle {
+    font-size: 19px;
+    font-weight: bold;
+    width: 300px;
+    margin: 20px 0px;
+    text-align: center; }
+  .project .info {
+    width: 370px;
+    text-align: left;
+    margin-top: 20px; }
+
 .navigation-spacer {
   height: 60px; }
 
@@ -46,6 +157,7 @@ table {
   height: 60px;
   border-bottom: 1px solid #F4F4F4;
   background-color: white;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -67,18 +179,13 @@ table {
     position: absolute;
     right: 0px;
     top: 0px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .navigation > .socials > .icon {
-      height: 20px;
-      margin-left: 15px; }
+    margin: 20px; }
 
 .header {
   padding-top: 80px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 350px; }
   .header > .background {
     position: absolute;
     display: block;
@@ -109,9 +216,57 @@ table {
 
 @font-face {
   font-family: "Butler";
-  src: url(assets/butler_regular_webfont.woff2); }
+  src: url(assets/butler_regular-webfont.woff2); }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Butler", "Times New Roman"; }
+  font-family: "Butler", "Times New Roman";
+  display: flex;
+  align-items: center;
+  overflow-x: hidden; }
+
+.spacer {
+  height: 30px; }
+  .spacer.h-10 {
+    height: 10px; }
+  .spacer.h-40 {
+    height: 40px; }
+  .spacer.h-80 {
+    height: 80px; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+.main-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  background-color: #D6F8F1;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 55px;
+  border-bottom: 1px solid black; }
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+  max-width: 325px;
+  text-align: center;
+  margin-top: 10px; }
+
+.info {
+  max-width: 380px;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center; }
