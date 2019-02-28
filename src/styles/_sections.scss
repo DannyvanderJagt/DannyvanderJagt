@@ -1,148 +1,148 @@
-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// section{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
-.line{
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid $line;
-}
+// .line{
+//   width: 100%;
+//   height: 1px;
+//   border-bottom: 1px solid $line;
+// }
 
-#who-i-am{
-  & > .photo{
-    width: 150px;
-    margin-bottom: -20px;
-  }
-}
+// #who-i-am{
+//   & > .photo{
+//     width: 150px;
+//     margin-bottom: -20px;
+//   }
+// }
 
-@media (max-width: 700px){
-  .left{ display: none !important; }
-}
+// @media (max-width: 700px){
+//   .left{ display: none !important; }
+// }
 
-#experience{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+// #experience{
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.project{
-  position: relative;
-  width: 100%;
-  height: 800px;
-  max-width: 1300px;
-  display: flex;
-  overflow: hidden;
-  border-bottom: 1px solid $line;
+// .project{
+//   position: relative;
+//   width: 100%;
+//   height: 800px;
+//   max-width: 1300px;
+//   display: flex;
+//   overflow: hidden;
+//   border-bottom: 1px solid $line;
 
-  & > .left {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    max-width: 650px;
-    background-size: auto 100%;
-    background-position: center center;
-    overflow: hidden;
+//   & > .left {
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     max-width: 650px;
+//     background-size: auto 100%;
+//     background-position: center center;
+//     overflow: hidden;
 
-    & > .left-image{
-      height: 100%;
-      width: 100%;
-      background-size: auto 100%;
-      background-position: center center;
-    }
+//     & > .left-image{
+//       height: 100%;
+//       width: 100%;
+//       background-size: auto 100%;
+//       background-position: center center;
+//     }
 
-    & > .angle{
-      width: 50px;
-      height: 810px;
-      transform: rotate(2deg);
+//     & > .angle{
+//       width: 50px;
+//       height: 810px;
+//       transform: rotate(2deg);
 
-      &.odd{
-        transform: rotate(-2deg);
-      }
+//       &.odd{
+//         transform: rotate(-2deg);
+//       }
 
-      &.left{
-        position: absolute;
-        background: white;
-        margin-left: -36px;
+//       &.left{
+//         position: absolute;
+//         background: white;
+//         margin-left: -36px;
 
-      }
-      &.right{
-        width: 30px;
-        background: white;
-        margin-left: -14px;
-        margin-right: -20px;
-      }
-    }
-  }
+//       }
+//       &.right{
+//         width: 30px;
+//         background: white;
+//         margin-left: -14px;
+//         margin-right: -20px;
+//       }
+//     }
+//   }
 
-  @media (max-width: 1300px){
-    .angle{
-      // background-color: red !important;
+//   @media (max-width: 1300px){
+//     .angle{
+//       // background-color: red !important;
 
-      &.odd.right{
-        display: none;
-      }
-      &.even.left{
-        display: none;
-      }
-    }
-  }
+//       &.odd.right{
+//         display: none;
+//       }
+//       &.even.left{
+//         display: none;
+//       }
+//     }
+//   }
 
-  & > .right{
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    min-width: 450px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+//   & > .right{
+//     overflow: hidden;
+//     height: 100%;
+//     width: 100%;
+//     min-width: 450px;
+//     background: white;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//   }
 
-  .job{
-    font-size: 19px;
-    font-weight: bold;
-    background: $base;
-    padding: 5px 10px;
-    margin: 60px 0px 20px 0px;
-  }
-  .title{
-    font-size: 64px;
-    text-align: center;
-    border-bottom: 1px solid black;
-    max-width: 500px;
-    height: 54px;
-    font-weight: bold;
-    padding: 0px 10px;
-  }
-  .subtitle{
-    font-size: 19px;
-    font-weight: bold;
-    width: 300px;
-    margin: 20px 0px;
-    text-align: center;
+//   .job{
+//     font-size: 19px;
+//     font-weight: bold;
+//     background: $base;
+//     padding: 5px 10px;
+//     margin: 60px 0px 20px 0px;
+//   }
+//   .title{
+//     font-size: 64px;
+//     text-align: center;
+//     border-bottom: 1px solid black;
+//     max-width: 500px;
+//     height: 54px;
+//     font-weight: bold;
+//     padding: 0px 10px;
+//   }
+//   .subtitle{
+//     font-size: 19px;
+//     font-weight: bold;
+//     width: 300px;
+//     margin: 20px 0px;
+//     text-align: center;
 
-  }
-  .info{
-    width: 370px;
-    text-align: left;
-    margin-top: 20px;
-  }
-}
+//   }
+//   .info{
+//     width: 370px;
+//     text-align: left;
+//     margin-top: 20px;
+//   }
+// }
 
-#experience{
-  border-bottom: 1px solid $line;
-}
-#lets-talk{
-  width: 100%;
-  padding-top: 80px;
-  border-bottom: 1px solid $line;
-}
-#footer{
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// #experience{
+//   border-bottom: 1px solid $line;
+// }
+// #lets-talk{
+//   width: 100%;
+//   padding-top: 80px;
+//   border-bottom: 1px solid $line;
+// }
+// #footer{
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }

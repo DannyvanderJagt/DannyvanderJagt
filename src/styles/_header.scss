@@ -1,41 +1,87 @@
-.header{
-  padding-top: 80px;
+#header{
+  max-width: 1440px;
+  width: 100%;
+
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 350px;
 
-    & > .background{
-      position: absolute;
-      display: block;
-      width: 100%;
-      margin-top: 40px;
-      height: 250px;
+  margin-bottom: 100px;
+
+  .welcome-logo{
+    margin-top: 140px;
+    margin-bottom: 70px;
+    max-width: 441px;
+    width: 80%;
+  }
+
+  .words-container{
       display: flex;
-      justify-content: center;
+      flex-direction: column;
 
-      & > .left{
-        width: 40%;
-        height: 238px;
-        background: url('assets/header-left.png');
+      &.mobile{
+        display: none;
       }
-      & > .center{
-        width: 1331px;
-        height: 250px;
-        background-size: 1331px 150px;
-        z-index: 99;
-      }
-      & > .right{
-        width: 40%;
-        height: 223px;
-        margin-top: 27px;
-        background: url('assets/header-right.png');
-      }
-    }
 
-    & > .name{
-      position: absolute;
-      width:518px;
-      margin-top: -40px;
-      z-index: 99;
-    }
+      @media only screen and (max-width: 1050px){
+        & .words-row{
+          max-width: 600px;
+        }
+      }
+
+      @media only screen and (max-width: 600px){
+        &{
+          display: none;
+        }
+
+        &.mobile{
+          display: block;
+        }
+      }
+
+      &.mobile {
+        .words-row{
+          margin: 0 20px;
+        }
+
+        .word{
+          font-size: 1.2em;
+        }
+      }
+
+      & .words-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+
+      & .word {
+        margin-right: 10px;
+        font-size: 1.5em;
+        line-height: 34px;
+        opacity: .28;
+        cursor: pointer;
+        white-space:nowrap;
+
+        &:hover{
+          opacity: 1;
+        }
+
+        &:after{
+          content: " . ";
+        }
+
+        &:last-child:after{
+          content: "";
+        }
+        
+      }
+
+  }
+
+
 }

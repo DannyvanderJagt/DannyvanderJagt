@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>park</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website-(new)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-1451.000000, -6295.000000)" fill-rule="nonzero">
+            <g id="park" transform="translate(1451.000000, 6295.000000)">
+                <path d="M27,38 L1,38 C0.44771525,38 0,38.4477153 0,39 C-1.11022302e-16,39.5522847 0.44771525,40 1,40 L3,40 L3,45 C3,45.5522847 3.44771525,46 4,46 C4.55228475,46 5,45.5522847 5,45 L5,40 L23,40 L23,45 C23,45.5522847 23.4477153,46 24,46 C24.5522847,46 25,45.5522847 25,45 L25,40 L27,40 C27.5522847,40 28,39.5522847 28,39 C28,38.4477153 27.5522847,38 27,38 Z" id="Path" fill="#87613E"></path>
+                <path d="M24,26 L4,26 C3.44771525,26 3,26.4477153 3,27 L3,38 L5,38 L5,37 C5,36.4477153 5.44771525,36 6,36 L22,36 C22.5522847,36 23,36.4477153 23,37 L23,38 L25,38 L25,27 C25,26.4477153 24.5522847,26 24,26 Z" id="Path" fill="#A67C52"></path>
+                <path d="M36,30 L38,30 L38,45 C38,45.5522847 37.5522847,46 37,46 L37,46 C36.4477153,46 36,45.5522847 36,45 L36,30 Z" id="Path" fill="#A67C52"></path>
+                <ellipse id="Oval" fill="#4DA34D" cx="37" cy="21" rx="9" ry="11"></ellipse>
+                <ellipse id="Oval" fill="#4DA34D" cx="37" cy="9" rx="7" ry="9"></ellipse>
+                <path d="M37,20 L37,20 C37.5522847,20 38,20.4477153 38,21 L38,32 L36,32 L36,21 C36,20.4477153 36.4477153,20 37,20 Z" id="Path" fill="#72C472"></path>
+            </g>
+        </g>
+    </g>
+</svg>

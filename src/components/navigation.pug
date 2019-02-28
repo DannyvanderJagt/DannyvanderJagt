@@ -1,12 +1,13 @@
 nav.navigation
-  img.icon(src='assets/icon.svg')
-  .menu
-    a.item(href='#who-i-am') Who I am
-    a.item(href='#experience') Experience
-    a.item(href='#lets-talk') Let's talk
-  .socials
-    each item in socials
-      a.icon(href=item.url)
-        img.icon(src=item.icon)
+	a(href='http://dannyvanderjagt.nl')
+		img.wordmark(src='assets/wordmark.svg')
+	.menu
+		a.item(href='#who-i-am') Who I am
+		a.item(href='#projects') Experience
+		a.item(href='#lets-talk') Let's talk
+	.socials
+		each item in socials
+			a.icon(href=item.url)
+				img.icon(src=item.icon)
 
 .navigation-spacer

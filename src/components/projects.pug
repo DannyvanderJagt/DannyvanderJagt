@@ -1,32 +1,27 @@
-section#experience
-  .line
-  .spacer.h-80
-  h1.big Experience
-  .spacer.h-10
-  h3.subtitle #{experience.quote}
-  .spacer.h-80
-
-
-each project, index in experience.items
-  .project.creative-confidence
-    if index % 2
-      .left
-        .angle.even.left
-        .left-image(style="background-image: url("+ project.featureImage+")")
-        .angle.even.right
-
-    .right
-      .job #{project.jobDescription}
-      each title in project.title
-        .title #{title}
-      .subtitle #{project.quote}
-      .info  #{project.content}
-      .spacer.h-40
-      each button in project.buttons
-        .button #{button.title}
-
-    if !(index % 2)
-      .left
-        .angle.left.odd
-        .left-image(style="background-image: url("+ project.featureImage+")")
-        .angle.right.odd
+#projects
+  each project, index in projects
+    .project(style="flex-direction: " + ((index % 2) ? 'row-reverse;' : 'row'))
+        .image-container(style="background-image: url("+ project.image +");")
+        .content-container
+          .content
+            .title-container
+              each title in project.title
+                .title
+                  .background #{title}
+            .intro #{project.intro}
+            .role #{project.role}
+            .copy
+                each content in project.content
+                  p #{content}
+            if(project.visit)
+              .button 
+                a.text(href=project.visit) Visit
+            if(project.download)
+              .download
+                  .text Download for
+                  if(project.download.ios)
+                    a.store.apple(href=project.download.ios)
+                      img(src='assets/apple.svg')
+                  if(project.download.android)
+                    a.store.android(href=project.download.android)
+                      img(src='assets/android.svg')
