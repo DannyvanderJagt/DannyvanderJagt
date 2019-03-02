@@ -1,7 +1,7 @@
 #projects
   each project, index in projects
     .project(style="flex-direction: " + ((index % 2) ? 'row-reverse;' : 'row'))
-        .image-container(style="background-image: url("+ project.image +");")
+        .image-container(style="background-image: url("+ project.image +");" + project.imageStyles)
         .content-container
           .content
             .title-container

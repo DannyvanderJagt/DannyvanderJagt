@@ -1,20 +1,20 @@
 module.exports = {
   socials: [
     {
-      icon: 'assets/logo-500px.svg',
-      url: 'http://www.500px.com'
+      icon: 'assets/500px.svg',
+      url: 'https://500px.com/dannyvanderjagt'
     },
     {
-      icon: 'assets/logo-medium.svg',
-      url: 'http://www.medium.com',
+      icon: 'assets/medium.svg',
+      url: 'https://medium.com/@DannyvanderJagt',
     },
     {
-      icon: 'assets/logo-github.svg',
-      url: 'http://www.github.com',
+      icon: 'assets/github.svg',
+      url: 'https://github.com/DannyvanderJagt',
     },
     {
-      icon: 'assets/logo-linkedin.svg',
-      url: 'http://www.linkedin.com',
+      icon: 'assets/linkedin.svg',
+      url: 'https://www.linkedin.com/in/dannyvanderjagt/',
     },
   ],
 
@@ -63,6 +63,7 @@ module.exports = {
     },
     {
       image: "assets/lightbase-hero.jpg",
+      imageStyles: "background-size: auto 100% !important;",
       role: "Front-end & React-Native developer",
       title: ["Lightbase"],
       intro: "“A new digital agency based in Utrecht”",
