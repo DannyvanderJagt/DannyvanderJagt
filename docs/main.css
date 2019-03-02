@@ -232,7 +232,8 @@ table {
     .navigation .socials {
       left: 0px;
       background-color: #D6F8F1;
-      justify-content: center; }
+      justify-content: center;
+      right: 0px; }
     .navigation .wordmark {
       top: 60px; }
     .navigation .menu {
