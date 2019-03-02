@@ -24,10 +24,10 @@ module.exports = {
       image: 'assets/crisp-hero.jpg',
       role: 'Front-end & React-Native developer',
       title: ["Crisp"],
-      intro: "“A brand new online supermarket, focused fresh food”",
+      intro: "“A brand new online supermarket focused on fresh food”",
       content: [
-        "Crisp is a new fully funded online-supermarket. Crisp offers super fresh, great quality products from over 200 farmers, fishermen, growers and makers via a fast and beautiful app.",
-        "I joined quite quick after it’s was founded and before the company launched in Nov 2019. Responsible for developing our app, working closely together with our product owners, UI, UX and creative teams. In addition I mentored new developers and was part of the (business) culture team.",
+        "Crisp is a new fully funded online-supermarket. Crisp offers super fresh, great quality products from over 200 farmers, fishermen, growers, and makers via a fast and beautiful app.",
+        "I joined quickly after it’s was founded and before the company launched in Nov 2019. Responsible for developing our app, working closely together with our product owners, UI, UX, and creative teams. In addition, I mentored new developers and was part of the (business) culture team.",
       ],
       visit: "https://crisp.nl",
       download: {
@@ -76,7 +76,7 @@ module.exports = {
       image: "assets/florin-hero.jpg",
       role: "Product & React-Native Developer",
       title: ["Florin"],
-      intro: "“A fin-tech startup offering payment request to friends (before it was widly adopted). Partnered with the startup-studio Backspace and financed by the ING”",
+      intro: "“A fin-tech startup offering payment request to friends (before it was a thing). Partnered with the startup-studio Backspace and financed by the ING”",
       content: [
         "As part of a creative multidisciplinary team, I got to work with and learn from a lot of experts in fields ranging from development, design, storytelling, brainstorming, finance, and business while experiencing and learning how to start and grow a startup. ",
         "Responsible for developing our app, making performance improvements, developing new features with our backend team and introducing animations. I was in charge of exploring new product developments and designs, new features, releases and overall performance. In 2 months time, I went on to be the lead developer and in charge of our overall mobile development.",
@@ -89,7 +89,7 @@ module.exports = {
       title: ["ING", "Innovation", "Session"],
       content: [
         "A 3-month long project, joined by Florin, Backspace, and the ING, with the mission to envision a new state of Europe's personal payment space. We got the opportunity the rethink how people pay in the future, to friends, companies and the government while making use of new technologies, laws, and culture.",
-        "While joining brainstorm sessions I contributed by providing out-of-the box perspectives, combining ideas, performing research, sharing knowledge of technology & design. In the user test stage I was responsible for designing  and developing 2 prototypes for user testing.",
+        "While joining brainstorm sessions I contributed by providing out-of-the-box perspectives, combining ideas, performing research, sharing knowledge of technology & design. In the user test stage, I was responsible for designing and developing 2 prototypes for user testing.",
       ]
     }
   ]
